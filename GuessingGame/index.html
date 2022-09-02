@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Guessing Game</title>
+</head> 
+<body>
+    <div class="guess_box">
+    <h1>Guessing Game</h1>
+    <input type= "number" id="inputID"> 
+    <button id="knappID">guess</button>
+    </div>
+
+
+
+</body>
+
+<script>
+    var knapp = document.querySelector("#knappID");
+    var input = document.querySelector("#inputID");
+
+    function sjekkTall(){
+    console.log(input.value)
+    }
+ 
+    knapp.addEventListener("click", sjekkTall);
+
+</script>
+
+
+</html>
