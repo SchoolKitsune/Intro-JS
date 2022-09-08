@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Guessing Game</title>
-</head> 
-<body>
-    <div class="guess_box">
-    <h1>Guessing Game</h1>
-    <input type= "number" id="inputID"> 
-    <button id="knappID">guess</button>
-    </div>
-
-
-
-</body>
-
-<script>
-    var knapp = document.querySelector("#knappID");
-    var input = document.querySelector("#inputID");
-
-    function sjekkTall(){
-    console.log(input.value)
-    }
- 
-    knapp.addEventListener("click", sjekkTall);
-
-</script>
-
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>I am Thinking of a number Between 1-100.</h3>
+            <h1>Can you Guess it</h3>
+            <input type="text" placeholder="Num" id="guess" /><br />
+            <button onclick="play()" id="my_btn">GUESS</button>
+            <p id="message1">No. of Guesss : 0</p>
+            <p id="message2">Guessed number are : none</p>
+            <p id="message3"></p>
+        </div>
+        <script src="GuessingGame.js"></script>
+    </body>
 </html>

@@ -11,8 +11,8 @@ h1 {
 }
 
 div {
+    padding-top: 50px;
     text-align:center
-
 }
 
 button {
@@ -20,5 +20,10 @@ button {
     background-color: rgb(36, 36, 36);
     color: white;
     border-color: white;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
