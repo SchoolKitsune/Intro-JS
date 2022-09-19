@@ -7,18 +7,14 @@
   var guesses_num = [];
   var reset = document.querySelector("#resetID");
   var user_guess = document.getElementById("guess").value;
-  var playing = true
-  var guesses = 10;
 
 
 function restart() {
     answer = Math.floor(Math.random() * 100) + 1;
-    guesses = 10;
     document.getElementById("message1").innerHTML="";
     user_guess.value = "";
     no_of_guesses = 0;
     guesses_num = [];
-    playing = true;
 
     msg2.innerHTML = "No. Of Guesses : " + no_of_guesses;
     msg3.innerHTML = "Guessed Number Are : none";
@@ -41,8 +37,14 @@ function play() {
                     msg2.textContent = "No. Of Guesses : " + no_of_guesses;
                     msg3.textContent = "Guessed Number Are: " + guesses_num;
                 } else if (user_guess == answer) {
-                    msg1.textContent = "Nice you won!"
-                    msg2.textContent = "the Number was " + answer; msg3.textContent = " You guessed it in " + no_of_guesses + " Guesses";
+                    msg1.textContent = "Nice you won! Enter a number to try again."
+                    msg2.textContent = "the Number was " + answer; 
+                    msg3.textContent = " You guessed it in " + no_of_guesses + " Guesses";
+                    answer = Math.floor(Math.random() * 100) + 1;
+                    user_guess.value = "";
+                    no_of_guesses = 0;
+                    guesses_num = [];
+
                 }
                 {
                 document.getElementById("guess").value = "";
