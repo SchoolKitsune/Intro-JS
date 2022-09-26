@@ -53,6 +53,7 @@ function play() {
     } // end check attempt
     else {
         msg1.textContent = "You have no more attempts, click reset to try again"
+        msg2.textContent = "The number was " + answer;
     }
 
     
